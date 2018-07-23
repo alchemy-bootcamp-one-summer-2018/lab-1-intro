@@ -11,35 +11,44 @@
     <h1>Some Questions For You</h1>   
 
         <script>
+            var ofage = prompt ('Are you 21 years old or older?')
+            console.log ('is the user at leas 21 year old');
         
-                var username = prompt ('Hey there! I\'m so glad you\'re here! What\'s your name?');
-                console.log('User name is', username);
+                if (ofage ==='yes') {
+                alert ('Sweet! You\'re in!')
+                }   
+
+                else {
+                alert ('aww sad face, see you in a fea years friend')
+                } 
+
+            var username = prompt ('Hey there! I\'m so glad you\'re here! What\'s your name?')
+            console.log('User name is', username);
+
+                alert ('Awesome, ' + username +' glad you\'re here!')
+
+            var optin = prompt ('Do you want to know the best champagne for your wallet?')
+            console.log ('do they want to take the quiz')
         
-                alert ('Nice to meet you ' + username + '! ' +'let\'s find you the right bubbly!')
-        
-                var dryOrSweet = prompt ("Do you like a dry or sweet flavor");
-                console.log ('what type of flavor')
+                if (optin ==='yes') {
+                alert ('Alight! ' + username + '! ' +'let\'s find you the right bubbly!')
+                }   
 
-                    if (dryOrSweet === 'dry'){
-                        alert ('I knew I liked you ' + username + '!');
-                    }
+                else {
+                        alert ('whomp whomp'+ username + 'try coors.com')
+                } 
 
-                    else {
-                        alert ('you\'re my kind of person'+ username + '!');
-                    }
-            
-                var budget = prompt ('What is your budget?')
-                console.log ('users budget');
+            var budget = prompt ('What is your budget?')
+            console.log ('users budget');
 
-                    if (budget >20);{
-                        alert ('Roederer Estate Brut. is perfect for you'+ username + 'it\'s cheap and' + dryOrSweet)
-                    }
-                    else { 
-                        alert (username + 'Moet Chandon Dom Perignon is what you need!')
+                if (budget >20) {
+                        alert ('Roederer Estate Brut. is perfect for you'+ username + 'it\'s cheap and' + dryOrSweet);
+                }
 
-                    }
+                else { 
+                alert (username + 'Moet Chandon Dom Perignon is what you need!');
 
-                
+                 }
             
             </script>
         
