@@ -10,25 +10,68 @@
   <p>What is your name?</p>
   <p>What is your quest?</p>
   <p>What is your favorite color?</p>
-
+  <p>Did you have fun?</p>
   <script>
-    var username = prompt('What is your name?');
-    console.log('User name is', username);
-    alert('Hi ' + username + ', have a good day');
 
-    var quest = prompt('What is your quest?');
-    console.log('Their quest is', quest);
-    if(quest === 'to find the holy grail' || 'To find the holy grail' || 'holy grail'){
-      alert(quest + ', ah, I see you\'ve seen Monty Python as well');
+    alert('Stop. He who would cross the bridge of death must answer me these questions three, and the other side he see.')
+    var readiness = confirm('Ask me the questions, bridgekeeper. I\'m not afraid.')
+    console.log('User is ready?', readiness);
+
+    if (readiness){
+      var username = prompt('What... is your name?');
+      console.log('Name is', username);
+      alert('Ok ' + username + '...');
+
+      var quest = prompt('What... is your quest?');
+      console.log('Their quest is', quest);
+      if(quest === 'to find the holy grail' || 'To find the holy grail' || 'holy grail'){
+        alert(quest + ', very well, ' + username + '.');
+      }
+      else {
+        alert(quest + '? Peculiar, ' + username + '.');
+      };
+
+      var luck = Math.round(Math.random());
+      console.log('Their luck is', luck);
+      if (luck){
+        var favoriteColor = prompt('What... is your favorite color?');
+        var lifePhrase = 'lived';
+        console.log('Their favorite color is', favoriteColor + ', and they ' + lifePhrase);
+        alert('Huh, okay. ' + favoriteColor + '. You may go.');
+      }
+      else {
+        var guess = prompt('What... Is the air speed velocity of an unladen swallow? (in mph)');
+        console.log('Their guess is', guess);
+        if (guess == 24){
+          var lifePhrase = 'lived';
+          console.log(username + ' ' + lifePhrase);
+          alert(+ guess + ' is correct. You may go.');
+        }
+        else {
+          var lifePhrase = 'died';
+          console.log(username + ' ' + lifePhrase);
+          alert('Die!');
+        }
+      }
+
+      var fun = confirm('Did you have fun, ' + username + "?");
+      if (fun){
+        var funPhrase = 'had fun';
+        console.log(username + ' ' + funPhrase);
+        alert('Great minds think alike.');
+      }
+      else {
+        var funPhrase = 'did not have fun';
+        console.log(username + ' ' + funPhrase);
+        alert('You make me sad. Watch this video, peasant: https://www.youtube.com/watch?v=pWS8Mg-JWSg');
+      }
+
+      alert('Narrator: ' + username + ' arrived at the bridge and faced off with the bridge troll. In pursuit of ' + quest + ', they ' + lifePhrase + '. ' + username + ' ' + funPhrase + '!');
     }
-    else {
-      alert('Wow, ' + quest + ', what a great goal');
-    };
+    else{
+      alert('Your mother was a hamster, and your father smelt of elderberries! https://media1.tenor.com/images/67907eeb047203d2b27614befa8ab547/tenor.gif?itemid=5234586');
+    }
 
-
-    var favoriteColor = prompt('What is your favorite color?');
-    console.log('Their favorite color is', favoriteColor);
-    alert('Interesting, ' + favoriteColor + ', I never would have guessed that');
 
   </script>
 
