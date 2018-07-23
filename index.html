@@ -7,34 +7,42 @@
     <title>Hello World</title>
 </head>
 <body>
-  <h1>Hello world</h1>
+  <h1>Welcome to a page full of questions!</h1>
+  <style>
+      p {background-color:antiquewhite}
+      body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+  </style>
         <p>What is your name?</p>
         <p>What country are you in?</p>
         <p>What is your favorite color?</p>
-        <p>   </p>
+        <p>What is your favorite season</p>
         <script>
             var userName = prompt('What is your name?')
-            console.log('hello', userName);
+            console.log('hello ', userName);
     
-            alert ('Hi ' + userName + ' Nice to meet you');
+            alert ('Hi ' + userName + ' nice to meet you');
     
             var countryName = prompt ('What country are you in')
-            console.log ('Oh! I love ' + countryName + 'who doesn\'t?');
+            console.log ('Oh! I love ' + countryName);
     
-            alert (countryName + ' is great!')
+            alert (countryName + ' is great!');
     
             var faveColor = prompt('What is your favorite color?')
-            console.log('Awesome!' + faveColor + 'is nice!')
+            console.log('Awesome!');
+
+            alert (faveColor + ' is a nice color');
 
             var faveSeason = prompt ('What is your favorite season?')
-            console.log('That is nice')
+            console.log('That is nice');
+
+            alert ('Great answer! '+ userName +' from ' + countryName + '' + faveSeason + ' is beautiful!');
     
             var lovesFood = confirm('Do you think food is good?');
     
-            if (lovesFood === "yes" || "Yes") {
+            if (lovesFood === true) {
                 alert ('Yay! You are a foodie!');
             } else {
-                alert('Oh I feel bad for you');
+                alert('Oh! I feel bad for you');
             }
 </script>
 </body>
