@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Lab #1</title>
 </head>
 <body>
     <h1>Welcome to Earth</h1>
@@ -20,11 +20,12 @@
     
     <script>
         
+        // Question 1
         var name = prompt('Welcome to Earth. We\'re happy to welcome all alien visitors who come in peace. What is your name?');
         alert('Hey, I went to school with someone named ' + name + '! I love that name.');
         console.log("Name is " + name);
         
-        
+        // Question 2
         var planet = prompt('What planet are you from?');
         if(planet.toLowerCase() !== 'earth') {
             alert(name + ', it is such a pleasure to meet someone from ' + planet + '. I\'ve always wanted to visit ' + planet + ' but I can\'t afford the ticket. I might be able to work my way there on a ' + planet + 'ian freighter.');
@@ -34,10 +35,12 @@
         }
         console.log('Planet is ' + planet);
 
+        // Question 3
         var site = prompt('When I visit ' + planet + ', what is the one site that should be on the top of my list?');
-        alert('Ah, how I would love to see ' + site + ' on ' + planet + '. Excellent suggestion, ' + name + ' . How could any visit to ' + planet + ' be complete without ' + site + '?');
+        alert('Ah, how I would love to see ' + site + ' on ' + planet + '. Excellent suggestion, ' + name + '. How could any visit to ' + planet + ' be complete without ' + site + '?');
         console.log('Site is ' + site);
 
+        // Question 4
         var peace = prompt('Do you come to Earth in peace? (Yes or No)');
         if(peace.toLowerCase() === 'yes') {
             alert('That\'s good to hear, ' + name + ', especially because I\'ve heard the weaponry from ' + planet + ' is very advanced compared to ours. Maybe I\'ll see you around Earth, or even when I finally visit the ' + site + ' on ' + planet + '.');
@@ -47,7 +50,6 @@
             alert('I\'m a bit unnerved by your evasive answer to a simple yes or no question, ' + name + '. Your intentions are as mysterious to me as ' + site + ' on ' + planet + '.');
         }
         console.log('Peaceful? ' + peace);
-
 
     </script>
     
