@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bridgeCross = prompt('Do you wish to cross the bridge?');
+        console.log('User wishes to cross the bridge.');
+
+        if(bridgeCross === 'Yes' || bridgeCross === 'yes' || bridgeCross === 'YES') {
+            alert('You must answer three questions.');
+        }
+        else {
+            alert('You must answer three questions anyway.');
+        }
+
+        var name = prompt('What is your name?');
+        console.log('User\'s name is', name);
+        alert(name + ' will answer two more questions.');
+
+        var favoriteColor = prompt('What is your favorite color?');
+        console.log(name + "\'s favorite color is " + favoriteColor);
+        alert(name + ', whose favorite color is ' + favoriteColor + ', will answer one more question.');
+
+        var swallowVelocity = prompt('What is the airspeed velocity of an unladen swallow?').toLowerCase();
+        console.log(name + '\'s response is ' + swallowVelocity);
+        
+        if(swallowVelocity === 'What do you mean, an African or European swallow?' 
+            || swallowVelocity === 'an african or european swallow?' 
+            || swallowVelocity === 'an african or european swallow' 
+            || swallowVelocity === 'an african swallow or european swallow?'       
+            || swallowVelocity === 'an african swallow or european swallow'
+            || swallowVelocity === 'what do you mean, an african or european swallow?' 
+            || swallowVelocity === 'what do you mean, an african or european swallow' 
+            || swallowVelocity === 'african or european?'
+            || swallowVelocity === 'african or european'
+            || swallowVelocity === 'african or european swallow?'
+            || swallowVelocity === 'african or european swallow'
+            || swallowVelocity === 'an african swallow?'    
+            || swallowVelocity === 'an african swallow' 
+        ) {
+            alert('Huh? What?  I...I don\'t know... AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUUUGGHHHHHHH! (Bridge Keeper Computer is thrown into the Gorge of Eternal Peril.)');
+        }
+        else {
+            alert(name + ', whose favorite color is ' + favoriteColor + ', will be thrown into the the Gorge of Eternal Peril.');
+        }  
+    </script>
+</body>
+</html>
+
+
+
