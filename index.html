@@ -13,18 +13,21 @@
         
         var name = prompt('Welcome to Earth. We\'re happy to welcome all alien visitors who come in peace. What is your name?')
         alert('Hey, I went to school with someone named ' + name + '! I love that name.')
-        console.log("Name is " + name)
+        console.log("Name is " + name);
         
         
         var planet = prompt('What planet are you from?');
-        console.log("Planet is " + planet)
+        console.log("Planet is " + planet);
         if(planet.toLowerCase !== 'earth') {
             alert(name + ', it is such a pleasure to meet someone from ' + planet + '. I\'ve always wanted to visit ' + planet + ' but I can\'t afford the ticket. I might be able to work my way there on this Tarukian freighter.');
         } else {
             planet = prompt(name + ', our records indicate definitively that you are not from Earth. What is your alien planet of origin?')
         }
         console.log('Planet is ' + planet);
-    
+
+        var site = prompt('When I do get to ' + planet + ', what is the one site that should be on the top of my list?');
+        alert('Ah, the beautiful ' + site + ' of Brooshenbauden. Excellent suggestion, ' + name + ' . How could any visit to ' + planet + 'be complete without seeing the ' + site + '?');
+        console.log('Site is ' + site);
 
 
 
