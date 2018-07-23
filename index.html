@@ -21,7 +21,16 @@
     var animalChoice = prompt('If you could be any animal, what would you choose?');
         console.log('Animal choice: ', animalChoice);
 
-        alert('Woah, solid choice ' +  username + '! I could see you as a/an ' + animalChoice + '!');
+        animalChoice.startsWith('a')
+
+        if (animalChoice.toLocaleLowerCase().startsWith('a') || animalChoice.toLocaleLowerCase().startsWith('e') || animalChoice.toLocaleLowerCase().startsWith('i') || animalChoice.toLocaleLowerCase().startsWith('o') || animalChoice.toLocaleLowerCase().startsWith('u') || animalChoice.toLocaleLowerCase().startsWith('y')) {
+            var article = 'an'
+        }
+        else { 
+            var article = 'a'
+
+        }
+        alert('Woah, solid choice ' +  username + '! I could see you as ' + article + ' ' + animalChoice + '!');
 
     var honestChoice = prompt('Are you being honest about what animal you chose (Yes or No)?');
         console.log('Told the truth:', honestChoice);
@@ -29,10 +38,20 @@
         alert('I appreciate your honesty, ' + username + '!');
 
     var spiritAnimal = prompt('Now be truthful. What animal would you actually be?');
-        console.log('Spirit Animal is', spiritAnimal );
+        console.log('Spirit Animal: ', spiritAnimal );
+
+         spiritAnimal.startsWith('a')
+
+            if (spiritAnimal.toLocaleLowerCase().startsWith('a') || spiritAnimal.toLocaleLowerCase().startsWith('e') || spiritAnimal.toLocaleLowerCase().startsWith('i') || spiritAnimal.toLocaleLowerCase().startsWith('o') || spiritAnimal.toLocaleLowerCase().startsWith('u') || spiritAnimal.toLocaleLowerCase().startsWith('y')) {
+                var article = 'an'
+        }
+            else { 
+                var article = 'a'
+
+        }
 
         alert('I was fibbing earlier, ' + username + '.');
-        alert('I always thought of you as a/an ' + spiritAnimal + '!');
+        alert('I always thought of you as ' + article + ' ' + spiritAnimal + '!');
 
     var loveLife = prompt('Would you enjoy your life as your spirit animal?(Yes/No)');
     
