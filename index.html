@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab 1</title>
+</head>
+<body>
+  <p>What is your name?</p>
+  <p>What is your quest?</p>
+  <p>What is your favorite color?</p>
+
+  <script>
+    var username = prompt('What is your name?');
+    console.log('User name is', username);
+    alert('Hi ' + username + ', have a good day');
+
+    var quest = prompt('What is your quest?');
+    console.log('Their quest is', quest);
+    if(quest === 'to find the holy grail' || 'To find the holy grail' || 'holy grail'){
+      alert(quest + ', ah, I see you\'ve seen Monty Python as well');
+    }
+    else {
+      alert('Wow, ' + quest + ', what a great goal');
+    };
+
+
+    var favoriteColor = prompt('What is your favorite color?');
+    console.log('Their favorite color is', favoriteColor);
+    alert('Interesting, ' + favoriteColor + ', I never would have guessed that');
+
+  </script>
+
+</body>
+</html>
