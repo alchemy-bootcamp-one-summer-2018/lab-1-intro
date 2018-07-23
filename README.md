@@ -1,3 +1,3 @@
-#Lab 1
+# Lab 1
 
 This is my first lab!
