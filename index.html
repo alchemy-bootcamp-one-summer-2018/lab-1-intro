@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Earth</h1>
+    
+    <script>
+        
+        var name = prompt('Welcome to Earth. We\'re happy to welcome all alien visitors who come in peace. What is your name?')
+        alert('Hey, I went to school with someone named ' + name + '! I love that name.')
+        console.log("Name is " + name)
+        
+        
+        var planet = prompt('What planet are you from?');
+        console.log("Planet is " + planet)
+        if(planet.toLowerCase !== 'earth') {
+            alert(name + ', it is such a pleasure to meet someone from ' + planet + '. I\'ve always wanted to visit ' + planet + ' but I can\'t afford the ticket. I might be able to work my way there on this Tarukian freighter.');
+        } else {
+            planet = prompt(name + ', our records indicate definitively that you are not from Earth. What is your alien planet of origin?')
+        }
+        console.log('Planet is ' + planet);
+    
+
+
+
+
+    </script>
+    
+</body>
+</html>
