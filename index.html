@@ -12,19 +12,20 @@
         var bridgeCross = prompt('Do you wish to cross the bridge?');
         console.log('User wishes to cross the bridge.');
 
-        if(bridgeCross === 'Yes' || bridgeCross === 'yes') {
+        if(bridgeCross === 'Yes' || bridgeCross === 'yes' || bridgeCross === 'YES') {
             alert('You must answer three questions.');
         }
         else {
-            prompt('You must answer three questions anyway.');
+            alert('You must answer three questions anyway.');
         }
 
         var name = prompt('What is your name?');
         console.log('Users name is', name);
-        alert(name + ' who, wishes to cross the bridge, will answer two more questions.');
-        
+        alert(name + ' will answer two more questions.');
 
         var favoriteColor = prompt('What is your favorite color?');
+        console.log(name + "\'s favorite color is " + favoriteColor);
+        alert(name + ', whose favorite color is ' + favoriteColor + ', will answer one more question.')
 
         var swallowVelocity = prompt('What is the airspeed velocity of an unladen swallow?')
     </script>
