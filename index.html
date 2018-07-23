@@ -8,9 +8,10 @@
 </head>
 <body>
   <h1>Hello world</h1>
-        <p> What is your name?</p>
+        <p>What is your name?</p>
         <p>What country are you in?</p>
         <p>What is your favorite color?</p>
+        <p>   </p>
         <script>
             var userName = prompt('What is your name?')
             console.log('hello', userName);
@@ -18,12 +19,15 @@
             alert ('Hi ' + userName + ' Nice to meet you');
     
             var countryName = prompt ('What country are you in')
-            console.log ('I love that', countryName);
+            console.log ('Oh! I love ', countryName + 'who doesn\'t?');
     
             alert (countryName + ' is great!')
     
             var faveColor = prompt('What is your favorite color?')
-            console.log('Awesome ', faveColor)
+            console.log('Awesome!', faveColor + 'is nice!')
+
+            var faveSeason = prompt ('What is your favorite season?')
+            console.log('That is nice')
     
             var lovesFood = confirm('Do you think food is good?');
     
