@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ask A Question</title>
+</head>
+<body>
+    <h1>Can I learn something about you?</h1>
+
+    <p>What is your name?</p>
+    <p>Where did you grow up?</p>
+    <p>Where is your favorite place to vacation?</p>
+    <p>Do you love dogs?</p>
+
+    <script>
+
+        var username = prompt('What is your name?');
+        console.log('User name is ' + username);
+        alert('Hello ' + username + ' nice to meet you!');
+
+        var growUp = prompt('Where did you grow up?');
+        console.log('Grew up in ' + growUp);
+        alert('No way! ' + username + ' I am from ' + growUp + ' also!');
+
+        var favoriteVacation = prompt('Where is your favorite place to vacation?');
+        console.log('They like to vacation in ' + favoriteVacation);
+        alert('Oh WOW! ' + username + ' I have always wanted to go to ' + favoriteVacation + ' You\'re so lucky!');
+
+        var lovesDogs = confirm('Do you love dogs?');
+        console.log('Loves dogs? ' + lovesDogs);
+        if(lovesDogs === true) {
+            alert('YAAASS ' + username + ' I knew a someone from ' + growUp + ' would love dogs!');
+        }
+        else {
+            alert('GROSS! ' + username + ' I bet you vacation in ' + favoriteVacation + ' by yourself! ');
+        }
+    </script>
+</body>
+</html>
