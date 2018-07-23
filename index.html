@@ -19,7 +19,7 @@
         }
 
         var name = prompt('What is your name?');
-        console.log('Users name is', name);
+        console.log('User\'s name is', name);
         alert(name + ' will answer two more questions.');
 
         var favoriteColor = prompt('What is your favorite color?');
@@ -27,19 +27,21 @@
         alert(name + ', whose favorite color is ' + favoriteColor + ', will answer one more question.');
 
         var swallowVelocity = prompt('What is the airspeed velocity of an unladen swallow?').toLowerCase();
-
         console.log(name + '\'s response is ' + swallowVelocity);
         
         if(swallowVelocity === 'What do you mean, an African or European swallow?' 
             || swallowVelocity === 'an african or european swallow?' 
-            || swallowVelocity === 'what do you mean, an african or european swallow?' 
-            || swallowVelocity === 'an african swallow or european swallow?'       
             || swallowVelocity === 'an african or european swallow' 
-            || swallowVelocity === 'what do you mean, an african or european swallow' 
+            || swallowVelocity === 'an african swallow or european swallow?'       
             || swallowVelocity === 'an african swallow or european swallow'
+            || swallowVelocity === 'what do you mean, an african or european swallow?' 
+            || swallowVelocity === 'what do you mean, an african or european swallow' 
             || swallowVelocity === 'african or european?'
             || swallowVelocity === 'african or european'
-            || swallowVelocity === 'african or european swallow'    
+            || swallowVelocity === 'african or european swallow?'
+            || swallowVelocity === 'african or european swallow'
+            || swallowVelocity === 'an african swallow?'    
+            || swallowVelocity === 'an african swallow' 
         ) {
             alert('Huh? What?  I...I don\'t know... AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUUUGGHHHHHHH! (Bridge Keeper Computer is thrown into the Gorge of Eternal Peril.)');
         }
