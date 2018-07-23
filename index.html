@@ -15,19 +15,30 @@
                 var username = prompt ('Hey there! I\'m so glad you\'re here! What\'s your name?');
                 console.log('User name is', username);
         
-                alert ('Nice to meet you' + username + '!')
+                alert ('Nice to meet you ' + username + '! ' +'let\'s find you the right bubbly!')
         
-                var likeChampagne = prompt ("Do you like champagne");
-                console.log ('the user likes champagne');
+                var dryOrSweet = prompt ("Do you like a dry or sweet flavor");
+                console.log ('what type of flavor')
 
-                if (likeChampagne === 'yes')
-                    {
-                    alert ('I knew I liked you'   + username );
-                }
-                else {
-                    alert ('wow that\'s surprising'   + username); 
-                }
-        
+                    if (dryOrSweet === 'dry'){
+                        alert ('I knew I liked you ' + username + '!');
+                    }
+
+                    else {
+                        alert ('you\'re my kind of person'+ username + '!');
+                    }
+            
+                var budget = prompt ('What is your budget?')
+                console.log ('users budget');
+
+                    if (budget >20);{
+                        alert ('Roederer Estate Brut. is perfect for you'+ username + 'it\'s cheap and' + dryOrSweet)
+                    }
+                    else { 
+                        alert (username + 'Moet Chandon Dom Perignon is what you need!')
+
+                    }
+
                 
             
             </script>
