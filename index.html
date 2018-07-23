@@ -26,29 +26,22 @@
         console.log(name + "\'s favorite color is " + favoriteColor);
         alert(name + ', whose favorite color is ' + favoriteColor + ', will answer one more question.');
 
-        var swallowVelocity = prompt('What is the airspeed velocity of an unladen swallow?');
-        console.log(name + '\'s response is' + swallowVelocity);
+        var swallowVelocity = prompt('What is the airspeed velocity of an unladen swallow?').toLowerCase();
+
+        console.log(name + '\'s response is ' + swallowVelocity);
         
         if(swallowVelocity === 'What do you mean, an African or European swallow?' 
-            || swallowVelocity === 'an African or European swallow?' 
             || swallowVelocity === 'an african or european swallow?' 
             || swallowVelocity === 'what do you mean, an african or european swallow?' 
-            || swallowVelocity === 'an african swallow or european swallow?'
-            || swallowVelocity === 'an African swallow or a European swallow?'        
-            || swallowVelocity === 'An African swallow or a European swallow?'
-            || swallowVelocity === 'What do you mean, an African or European swallow' 
-            || swallowVelocity === 'an African or European swallow' 
+            || swallowVelocity === 'an african swallow or european swallow?'       
             || swallowVelocity === 'an african or european swallow' 
             || swallowVelocity === 'what do you mean, an african or european swallow' 
             || swallowVelocity === 'an african swallow or european swallow'
-            || swallowVelocity === 'an African swallow or a European swallow'        
-            || swallowVelocity === 'An African swallow or a European swallow'
-            || swallowVelocity === 'African or European?' 
             || swallowVelocity === 'african or european?'
-            || swallowVelocity === 'African or European' 
-            || swallowVelocity === 'african or european'    
+            || swallowVelocity === 'african or european'
+            || swallowVelocity === 'african or european swallow'    
         ) {
-            alert('Huh? What?  I...I don\'t know... AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUUUGGHHHHHHH! (Bridgekeeper is thrown into the Gorge of Eternal Peril.)');
+            alert('Huh? What?  I...I don\'t know... AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUUUGGHHHHHHH! (Bridge Keeper Computer is thrown into the Gorge of Eternal Peril.)');
         }
         else {
             alert(name + ', whose favorite color is ' + favoriteColor + ', will be thrown into the the Gorge of Eternal Peril.');
