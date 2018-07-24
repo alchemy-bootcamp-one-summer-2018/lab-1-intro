@@ -8,47 +8,54 @@
 </head>
 <body>
 
-    <h1>Some Questions For You</h1>   
+    <h1>Some Questions About Champagne</h1>   
+
+    <p> 
+        <li>How old are you?</li>
+        <li>Hey there I'm glad you're heres, what's your name?</li>
+        <li>Woooo you're (x) years old. I'm so glad you're hear fancy pants! What's your name?</li>
+        <li>What is your budget?</li>
+        
+    </p>
 
         <script>
-            var ofage = prompt ('Are you 21 years old or older?')
-            console.log ('is the user at leas 21 year old');
+            var ofage = prompt ('How old are you?')
+            console.log (username, 'age');
         
-                if (ofage ==='yes') {
-                alert ('Sweet! You\'re in!')
+                if (ofage >20) {
+                alert ('Wooo you\'re ' + ofage + ' and old enough to drink!')
                 }   
 
                 else {
-                alert ('aww sad face, see you in a fea years friend')
+                alert ('hmmm you\'re '+ ofage + ' ? Well then pretend we\re in Europe where it doesn\'t matter....')
                 } 
 
-            var username = prompt ('Hey there! I\'m so glad you\'re here! What\'s your name?')
+            var username = prompt ('I\'m so glad you\'re here you ' + ofage + ' year old fancy pants! What\'s your name?')
             console.log('User name is', username);
 
-                alert ('Awesome, ' + username +' glad you\'re here!')
+                alert ('Awesome, '+ ofage + ' year old ' + username +' glad you\'re here!')
 
-            var optin = prompt ('Do you want to know the best champagne for your wallet?')
-            console.log ('do they want to take the quiz')
+            var optin = prompt (username + ', want me to tell you the perfect champagne for your wallet?')
+            console.log (username, 'ready for quiz');
         
                 if (optin ==='yes') {
-                alert ('Alight! ' + username + '! ' +'let\'s find you the right bubbly!')
+                alert (optin +'! ' + ofage + ' year old ' + username + ' let\'s find you the right bubbly!')
                 }   
 
                 else {
-                        alert ('whomp whomp'+ username + 'try coors.com')
+                 alert ('OH!...' + ofage + ' year old ' + username +' be a sweet child and find out for your mom then.')
                 } 
 
             var budget = prompt ('What is your budget?')
-            console.log ('users budget');
+            console.log (username, 'budget');
 
-                if (budget >20) {
-                        alert ('Roederer Estate Brut. is perfect for you'+ username + 'it\'s cheap and' + dryOrSweet);
+                if (budget <20) {
+                alert (username + ' for a thrift ' + ofage + ' year old person like yourself,' + 'Roederer Estate Brut. is perfect for you');
                 }
 
                 else { 
-                alert (username + 'Moet Chandon Dom Perignon is what you need!');
-
-                 }
+                alert (username + ' for a sophisticated ' + ofage + ' year old person like yourself, Moet Chandon Dom Perignon is just what you need!')
+                }
             
             </script>
         
