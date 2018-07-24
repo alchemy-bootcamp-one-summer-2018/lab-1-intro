@@ -6,24 +6,69 @@
        <title>Asker of Questions</title>
 </head>
 <body>
-    <p>We're going to ask you some questions, please answer 
-        them to the best of your abilities.</p>
+    <h3>We're going to ask you some questions, please answer 
+        them to the best of your abilities.</h3>
+    
+    <p>What is your name?</p>
+
+    <p>What is your home planet?</p>
+
+    <p>Are you from the past, present, or future?</p>
+
+    <p>Do you come in peace?</p>
+
+    
+    
+    
     <script>
-        var planetName = prompt('What is your home planet?');
+        
+        var name = prompt('What is your name?');
+        console.log('Subject\'s name is ', name);
+
+        alert('That\'s quite a name, surely you\'re not from Earth!');
+
+        var planetName = prompt('What is your home planet, ' + name + '?');
         console.log('The subject\'s home planet is ', planetName);
 
-        alert('I see. You\'ve traveled very far from ' + planetName + ' to be here with us today');
+        var timeName = prompt('Are you from the past, present, or future?');
+        console.log(name, ' is from ', planetName, ' in the ', timeName);
 
-        var comeInPeace = prompt('Do you come in peace? Please answer yes or no.');
+        alert('I see. You\'ve traveled very far from ' + planetName + ' in the ' + timeName + 
+        ' to be here with us today, ' + name);
+
+        var peaceTalk = function(){
+            
+            var comeInPeace = prompt('Do you come in peace? Please answer yes or no.');
+            
+            if (comeInPeace === 'Yes' || comeInPeace === 'yes') {
+            console.log(name, ', the traveler from' , planetName , ' comes in peace.');
+                
+                var friendsOrNot = prompt('All right, ' + name + '! Did you bring any friends with you from ' + planetName + '?');
+                    
+                if(friendsOrNot === 'Yes' || friendsOrNot === 'yes'){
+                    var numOfFriends = prompt('How many?')
+                    alert('Very cool, ' + name + ', very cool. Bring your ' + numOfFriends + ' friends over and let\'s have a party!');
+                }
+                
+                if(friendsOrNot === 'No' || friendsOrNot === 'no'){
+                    alert('That\'s a shame! Next time you come to Earth, ' + name + ', bring a couple friends from ' + 
+                    planetName + ' and we\'ll have a party!');
+                }
+            }
+            else if (comeInPeace === 'No' || comeInPeace === 'no'){ 
+                console.log(name, ', the traveler from', planetName , ' seeks war.');
+                alert('Well we don\'t want any trouble! Please head back to ' + planetName + ' in the ' 
+                + timeName + ' and forget you ever met us!')
+            }
+            else {
+                alert('Now isn\'t the time to teach us the language of ' + planetName + ', ' + name + '!');
+                console.log(name, ' is speaking the language of ', planetName, 'and we can\'t understand it yet.');
+                peaceTalk();
+            }
         
-        if (comeInPeace === 'Yes' || 'yes') {
-            console.log('The traveler from ' + planetName + ' comes in peace.');
         }
-        if (comeInPeace) === 'No' || 'no'{
-            console.log('The traveler from ' + planetName + ' seeks war.');
-        }
-        //what are your intentions with our world ()
-        //
+        
+        peaceTalk();
 
     </script>
 </body>
