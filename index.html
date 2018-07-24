@@ -7,16 +7,21 @@
     <title>Questions</title>
     <link href = 'example.css' type = 'text/css' rel = 'stylesheet'/>
 </head>
-<body>
+
+<body onload = "questions()">
         <p class = 'name'> What is your name? </p>
         <p class = 'age'> What is your age? </p>
         <p class = 'worldcup'> Did you watch the World Cup? </p>
         <p class = 'website'> What website do you want me to display? </p>
-        <p> I tricked you, <span class = 'name' id = 'name'> </span>! Although you are <span class = 'age' id = 'age'></span> and
+        <p id = "trick"> I tricked you, <span class = 'name' id = 'name'> </span>! Although you are <span class = 'age' id = 'age'></span> and
             you <span class = 'worldcup' id = 'worldcup'> </span> the World Cup 
-            and you wanted to view <span class = 'website' id = 'website'> </span>, this is the only website you get:</p>    
+            and you wanted to view <span class = 'website' id = 'website'> </span>, this is the only website you get:
+            <iframe width='500' height='300' src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>   
+        </p>    
         <script script type="text/javascript"  src = "questions.js"></script>
+        </div>
 
-    <iframe width='500' height='300' src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>   
+    
 </body>
+
 </html>

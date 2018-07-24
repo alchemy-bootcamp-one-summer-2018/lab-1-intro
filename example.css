@@ -17,3 +17,7 @@ body {
 .website {
     color: rgb(225,225,0);
 }
+
+#trick {
+    display: none
+}
