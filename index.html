@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav>
+      <ul id="gallery">
+        <li>
+          <img src="https://i.imgur.com/RIgaf5Z.gif" alt="">
+          <p>What is your name, peasant?!</p>
+        </li>
+        <li>
+          <img src="https://thumbs.gfycat.com/BigIdleCowbird-max-1mb.gif" alt="">
+          <p>From what filthy hovel do you hail?</p>
+        </li>
+        <li>
+          <img src="https://thumbs.gfycat.com/SpitefulNeglectedEgret-size_restricted.gif" alt="">
+          <p>What delicious succulent meats do you eat?</p>
+        </li>
+        <li>
+          <img src="https://coubsecure-s.akamaihd.net/get/b62/p/coub/simple/cw_timeline_pic/e3d9cfa4123/39b8525033a589f915bc8/ios_large_1442874682_image.jpg" alt="">
+          <p>Praise Raptor Jesus! Do you accept Raptor Jesus into your life as your Lord?</p>
+        </li>
+      </ul>
+        <div><img src="https://i.imgur.com/unt9E03.gif"><div><button onclick="doStuff()">Answer questions</button></div></div>
+    </nav>
+      <footer>
+        <a href="http://twitter.com/sd_zekka"><img src="images/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com/ron.yonker.5"><img src="images/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2018 Ron Yonker.</p>
+      </footer>
+
+    <script>
+        function doStuff() {
+            let whoThis = prompt("What is your name, peasant?!"); 
+            console.log("User name is", whoThis);
+            alert("Welcome, " + whoThis);    
+    
+            let whereFrom = prompt(whoThis + ", from what filthy hovel do you hail?");
+            console.log(whoThis, "is from", whereFrom)
+            alert("Welcome " + whoThis + " from " + whereFrom);
+            
+            let favFood = prompt("What delicious succulent meats do you eat?");
+            console.log(whoThis, "from", whereFrom, "enjoys", favFood)
+            alert("That sounds revolting, " + whoThis + " from " + whereFrom + ", you actually like " + favFood + "?");
+
+            let savior = confirm("Praise Raptor Jesus! Do you accept Raptor Jesus into your life as your Lord?");
+            if (savior) { console.log(whoThis, "from", whereFrom, "who enjoys", favFood, "has accepted Raptor Jesus as their Lord."); alert("As it should be, " + whoThis + "! " + "He would bring and VelociRapture to " + whereFrom + " and burn all the " + favFood + " if you did not!");}
+                else { console.log(whoThis, "from", whereFrom, "who enjoys", favFood, "has NOT accepted Raptor Jesus as their overlord! Heathen!"); alert("How dare you, " + whoThis + " from " + whereFrom + "! You eat " + favFood + " but don't appreciate that He went extinct for your sins!");}
+        }
+
+    </script>
+</body>
+</html>
