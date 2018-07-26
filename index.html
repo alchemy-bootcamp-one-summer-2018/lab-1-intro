@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World</title>
+</head>
+<body>
+  <h1>Welcome to a page full of questions!</h1>
+<style>
+      p {background-color:antiquewhite}
+      body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+ </style>
+        <p>What is your name?</p>
+        <p>What country are you in?</p>
+        <p>What is your favorite color?</p>
+        <p>What is your favorite season</p>
+ <script>
+            var userName = prompt('What is your name?');
+            console.log('hello ', userName);
+    
+            alert ('Hi ' + userName + ' nice to meet you');
+    
+            var countryName = prompt ('What country are you in');
+            console.log ('Oh! I love ' + countryName);
+    
+            alert (countryName + ' is great!');
+    
+            var faveColor = prompt('What is your favorite color?');
+            console.log('Awesome!');
+
+            alert (faveColor + ' is a nice color');
+
+            var faveSeason = prompt ('What is your favorite season?');
+            console.log('That is nice');
+
+            alert ('Great answer! ' + userName + ' from ' + countryName + '' + faveSeason + ' is beautiful!');
+    
+            var lovesFood = confirm('Do you think food is good?');
+    
+            if (lovesFood === true) {
+                alert ('Yay! You are a foodie!');
+            } else {
+                alert('Oh! I feel bad for you');
+            }
+            
+</script>
+</body>
+</html>
