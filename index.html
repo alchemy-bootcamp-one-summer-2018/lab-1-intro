@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>What's Your Name?</p>
+    <p>If you could be any animal, what would you choose?</p>
+    <p>Are you telling the truth about your animal choice?</p>
+    <p>Now be honest. What animal would you ACTUALLY be?</p>
+    <p>Would you enjoy your life as your spirit animal?</p>
+<script>
+    var username = prompt('Whats Your Name?');
+        console.log('User name is ', username);
+
+        alert('Hey '+   username + '! You seem delightful!');
+
+    var animalChoice = prompt('If you could be any animal, what would you choose?');
+        console.log('Animal choice: ', animalChoice);
+
+        animalChoice.startsWith('a')
+
+        if (animalChoice.toLocaleLowerCase().startsWith('a') || animalChoice.toLocaleLowerCase().startsWith('e') || animalChoice.toLocaleLowerCase().startsWith('i') || animalChoice.toLocaleLowerCase().startsWith('o') || animalChoice.toLocaleLowerCase().startsWith('u') || animalChoice.toLocaleLowerCase().startsWith('y')) {
+            var article = 'an'
+        }
+        else { 
+            var article = 'a'
+
+        }
+        alert('Woah, solid choice ' +  username + '! I could see you as ' + article + ' ' + animalChoice + '!');
+
+    var honestChoice = prompt('Are you being honest about what animal you chose (Yes or No)?');
+        console.log('Told the truth:', honestChoice);
+
+        alert('I appreciate your honesty, ' + username + '!');
+
+    var spiritAnimal = prompt('Now be truthful. What animal would you actually be?');
+        console.log('Spirit Animal: ', spiritAnimal );
+
+         spiritAnimal.startsWith('a')
+
+            if (spiritAnimal.toLocaleLowerCase().startsWith('a') || spiritAnimal.toLocaleLowerCase().startsWith('e') || spiritAnimal.toLocaleLowerCase().startsWith('i') || spiritAnimal.toLocaleLowerCase().startsWith('o') || spiritAnimal.toLocaleLowerCase().startsWith('u') || spiritAnimal.toLocaleLowerCase().startsWith('y')) {
+                var article = 'an'
+        }
+            else { 
+                var article = 'a'
+
+        }
+
+        alert('I was fibbing earlier, ' + username + '.');
+        alert('I always thought of you as ' + article + ' ' + spiritAnimal + '!');
+
+    var loveLife = prompt('Would you enjoy your life as your spirit animal?(Yes/No)');
+    
+        if (loveLife === 'yes' || loveLife === 'Yes'){
+            console.log( username + ' will love life as their animal.');
+            alert('Congratulations! You are going to be so happy as a/an ' + spiritAnimal + '!');
+        }
+        else {
+            console.log( username + ' will not love life as their animal.');
+            alert('Sorry, you\'re stuck as a ' + spiritAnimal + ' forever. Get used to it!');
+        }
+</script>
+</body>
+</html>
