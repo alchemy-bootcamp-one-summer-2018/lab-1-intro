@@ -1,0 +1,23 @@
+body {
+    font-family: arial;
+    background-color: rgb(185,179,175);}
+
+.name {
+    color: rgb(255,0,0);
+}
+
+.age {
+    color: rgb(0,225,0);
+}
+
+.worldcup {
+    color: rgb(0,0,225);
+}
+
+.website {
+    color: rgb(225,225,0);
+}
+
+#trick {
+    display: none
+}
