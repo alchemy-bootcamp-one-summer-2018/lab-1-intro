@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Questions </title>
+</head>
+<body>
+    <p> What city were you born in?</p>
+    <p> What is your favorite hometown activity?</p>
+    <p> Where do you live now?</p>
+    <p> Do you love living in your current city?</p>
+
+<script>
+    var hometown = prompt('What city were you born in?')
+    console.log('Hometown is', hometown);
+    alert ('Wow ' + hometown + ' sounds like a great hometown!');
+
+    var activity = prompt('What is your favorite hometown activity?')
+    console.log('Favorite hometown activity' + activity);
+    alert (activity + ' sounds so fun!');
+
+    var NewCity = prompt('Where do you live now?')
+    console.log('new city');
+    alert (NewCity + ' sounds exciting!');
+
+    var current = prompt ('Do you love living in your current city?')
+    console.log ('current city', current);
+    if(current === 'yes' || current === 'Yes' ) {
+        alert ('Awesome! Glad you like ' + NewCity + '!')
+    }
+    else {
+        alert ('Oh no! I hope you find somewhere better than ' + current + '! I hope they have ' + activity + ' there too!');
+    }
+
+    </script>
+</body>
+</html>
